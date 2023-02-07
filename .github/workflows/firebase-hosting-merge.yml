@@ -16,9 +16,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "14"
-      - name: Run prettier
         run: |
-          npm ci
+          npm install
           npm build
       - uses: actions/checkout@v2
       - uses: FirebaseExtended/action-hosting-deploy@v0
